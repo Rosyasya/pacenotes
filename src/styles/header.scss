@@ -1,0 +1,39 @@
+.header_wrapper {
+  width: 100%;
+  background: white;
+}
+
+.header_container {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+}
+
+#Logo {
+  font-size: 2.5rem;
+}
+
+#Logo_upperline {
+  width: 14rem;
+  height: 0.4rem;
+  background: #9747FF;
+}
+
+#Logo_bottomline {
+  width: 14rem;
+  height: 0.4rem;
+  background: #B4F1CC;
+}
+
+.nav_container {
+  ul {
+    padding: 0rem 1.2rem;
+    list-style-type: none;
+    display: flex;
+    gap: 2.4rem;
+  }
+}

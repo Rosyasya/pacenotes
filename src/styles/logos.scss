@@ -1,0 +1,27 @@
+.logos_wrapper {
+  width: 100%;
+}
+
+.logos_container {
+  width: 70%;
+  margin: 8rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  h3 {
+    font-size: 6.4rem;
+  }
+
+  h4 {
+    font-size: 2.4rem;
+  }
+}
