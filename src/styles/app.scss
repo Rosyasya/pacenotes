@@ -79,21 +79,40 @@ h3 {
   gap: 1rem;
   border-radius: 10rem;
   font-weight: 500;
+  transition: 0.3s all ease;
 
   a {
     color: white;
   }
 }
 
+.primary_button:hover {
+  background: #7939CC;
+}
+
+.primary_button:active {
+  background: #A159FF;
+}
+
 .secondary_button {
   padding: 1.6rem 2.6rem 1.6rem 2.4rem;
-  background: transparent;
+  background: white;
   color: #9747FF;
   display: flex;
   align-items: center;
   gap: 1.2rem;
   border: 1px solid #9747FF;
   border-radius: 10rem;
+  font-weight: 500;
+  transition: 0.3s all ease;
+}
+
+.secondary_button:hover {
+  border-color: #7939CC;
+}
+
+.secondary_button:active {
+  border-color: #A159FF;
 }
 
 .purple_text {
@@ -104,3 +123,5 @@ h3 {
 @import './main';
 @import './logos';
 @import './hero';
+@import "./advantages";
+@import "./testimonials";

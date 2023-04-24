@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import phone from '../images/phone.png';
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const Header = () => {
+    const [burgerActive, setBurgerActive] = useState(false);
+
     return (
         <div className='header_wrapper'>
             <div className='header_container'>
@@ -34,7 +37,7 @@ const Header = () => {
                     </ul>
                 </nav>
                 <Link className='primary_button' to='/'>
-                    <img src={phone} alt="phone"/>
+                    <FontAwesomeIcon icon={faPhone} />
                     Book a free call
                 </Link>
             </div>
