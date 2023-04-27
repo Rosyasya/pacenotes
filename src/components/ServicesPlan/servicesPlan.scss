@@ -1,0 +1,44 @@
+.services_plan_container {
+  width: 32.8rem;
+  padding: 4rem 3.2rem;
+  background: white;
+  border-radius: 1.6rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  &__premium {
+    background: #9747FF;
+    color: white;
+  }
+}
+
+.services_plan_info {
+  display: flex;
+  flex-direction: column;
+
+  p:nth-of-type(1) {
+    margin: 3.2rem 0 0 0;
+  }
+
+  h2 {
+    margin: 0 0 3.2rem 0;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p:nth-of-type(2) {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .services_plan_container {
+    width: 100%;
+  }
+}

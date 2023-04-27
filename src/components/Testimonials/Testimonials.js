@@ -1,6 +1,6 @@
 import React from "react";
-import christoph from '../images/christoph.png';
-import sophie from '../images/sophie.png';
+import christoph from '../../images/christoph.png';
+import sophie from '../../images/sophie.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowLeft, faLongArrowRight } from "@fortawesome/free-solid-svg-icons";
 

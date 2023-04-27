@@ -11,6 +11,13 @@
   justify-content: space-around;
   align-items: center;
   background: white;
+
+  button {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
 }
 
 #Logo {
@@ -37,5 +44,27 @@
     display: flex;
     gap: 2.4rem;
     font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .header_container {
+    justify-content: space-between;
+
+    button {
+      display: block;
+    }
+
+    .primary_button {
+      display: none;
+
+      &__reversed {
+        display: none;
+      }
+    }
+  }
+
+  .nav_container {
+    display: none;
   }
 }

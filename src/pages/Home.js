@@ -1,19 +1,23 @@
-import Header from "../components/Header";
-import Main from "../components/Main";
-import Logos from "../components/Logos";
-import Hero from "../components/Hero";
-import Advantages from "../components/Advantages";
-import Testimonials from "../components/Testimonials";
-import Services from "../components/Services";
-import WhyPacenotes from "../components/WhyPacenotes";
-import Help from "../components/Help";
-import AnyQuestions from "../components/AnyQuestions";
-import Footer from "../components/Footer";
+import Header from "../components/Header/Header";
+import Main from "../components/Main/Main";
+import Logos from "../components/Logos/Logos";
+import Hero from "../components/Hero/Hero";
+import Advantages from "../components/Advantages/Advantages";
+import Testimonials from "../components/Testimonials/Testimonials";
+import Services from "../components/Services/Services";
+import WhyPacenotes from "../components/WhyPacenotes/WhyPacenotes";
+import Help from "../components/Help/Help";
+import AnyQuestions from "../components/AnyQuestion/AnyQuestions";
+import Footer from "../components/Footer/Footer";
+import MobileMenu from "../components/MobileMenu/MobileMenu";
+import {useState} from "react";
 
 const Home = () => {
+    const [burgerActive, setBurgerActive] = useState(false);
+
     return (
         <>
-            <Header />
+            <Header burgerActive={burgerActive} setBurgerActive={setBurgerActive}/>
             <Main />
             <Logos />
             <Hero />
@@ -24,6 +28,7 @@ const Home = () => {
             <Help />
             <AnyQuestions />
             <Footer />
+            <MobileMenu burgerActive={burgerActive} setBurgerActive={setBurgerActive}/>
         </>
     );
 }

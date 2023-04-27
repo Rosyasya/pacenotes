@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import hero from '../images/hero.png';
+import hero from '../../images/hero.png';
 import {faLongArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
@@ -14,10 +14,12 @@ const Hero = () => {
                         Now, my mission as a Fractional CMO is to help start-ups and mid-size companies succeed in today’s fast-paced marketplace. I firmly believe that data-driven marketing strategies are essential to drive engagement and growth, and I am committed <strong>to providing tailored and personalized approaches</strong> that deliver results for my clients.</p>
                     <Link className='secondary_button' to='/'>
                         Read more
-                        <FontAwesomeIcon icon={faLongArrowRight} />
+                        <FontAwesomeIcon icon={faLongArrowRight} size='xl'/>
                     </Link>
                 </div>
-                <img src={hero} alt="hero"/>
+                <div className="hero_img_container">
+                    <img src={hero} alt="hero"/>
+                </div>
             </div>
         </div>
     );

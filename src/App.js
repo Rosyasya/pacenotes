@@ -1,6 +1,7 @@
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import './styles/app.scss';
+import ButtonPage from "./pages/ButtonPage/ButtonPage";
+import './app.scss';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
           <BrowserRouter >
               <Routes>
                   <Route path='/' element={<Home />} exact></Route>
+                  <Route path='/button' element={<ButtonPage />}></Route>
               </Routes>
           </BrowserRouter>
       </div>

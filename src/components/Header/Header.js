@@ -1,15 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import {faBars, faPhone} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-const Header = () => {
-    const [burgerActive, setBurgerActive] = useState(false);
-
+const Header = ( { burgerActive, setBurgerActive }) => {
     return (
         <div className='header_wrapper'>
             <div className='header_container'>
-                <div className='logo_cotainer'>
+                <div className='logo_container'>
                     <Link id='Logo' to='/'>PACENOTES</Link>
                     <div id='Logo_upperline'></div>
                     <div id='Logo_bottomline'></div>
@@ -40,6 +38,9 @@ const Header = () => {
                     <FontAwesomeIcon icon={faPhone} />
                     Book a free call
                 </Link>
+                <button onClick={() => setBurgerActive(!burgerActive)} className='header_burger'>
+                    <FontAwesomeIcon icon={faBars} size='2xl' />
+                </button>
             </div>
         </div>
     );

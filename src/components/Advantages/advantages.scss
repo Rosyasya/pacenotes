@@ -12,7 +12,7 @@
   justify-content: center;
 
   h5 {
-    width: 57%;
+    width: 75%;
     margin: 2.4rem 0 8rem 0;
     font-size: 1.6rem;
     font-weight: 400;
@@ -69,6 +69,25 @@
     font-weight: 500;
     color: #8E98B0;
     line-height: 180%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advantages_container {
+    width: 70%;
+    padding: 4.8rem 0;
+    align-items: center;
+
+    h5 {
+      width: 100%;
+      margin: 2.4rem 0;
+      text-align: start;
+    }
+  }
+
+  .advantages_container_grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
   }
 }
 

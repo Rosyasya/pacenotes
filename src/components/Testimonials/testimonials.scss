@@ -4,7 +4,7 @@
 }
 
 .testimonials_container {
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
   padding: 14rem 0;
   display: flex;
@@ -63,7 +63,7 @@
 }
 
 .testimonials_slider_item_info {
-  width: 74%;
+  width: 95%;
   text-align: center;
 
   h3 {
@@ -81,5 +81,11 @@
   h5 {
     font-size: 1.6rem;
     font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .testimonials_container {
+    display: none;
   }
 }

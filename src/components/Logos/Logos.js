@@ -1,9 +1,9 @@
 import React from "react";
-import perrigo from '../images/perrigo.png';
-import kimberly_clark from '../images/kimberly_clark.png';
-import pholip_morris from '../images/philip_morris.png';
-import glusco from '../images/glusco.png';
-import omega_pharma from '../images/omega_pharma.png';
+import perrigo from '../../images/perrigo.png';
+import kimberly_clark from '../../images/kimberly_clark.png';
+import pholip_morris from '../../images/philip_morris.png';
+import glusco from '../../images/glusco.png';
+import omega_pharma from '../../images/omega_pharma.png';
 
 const Logos = () => {
     return (

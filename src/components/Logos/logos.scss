@@ -3,7 +3,7 @@
 }
 
 .logos_container {
-  width: 70%;
+  width: 75%;
   margin: 0rem auto;
   padding: 8rem 0;
   text-align: center;
@@ -26,6 +26,17 @@
   h4 {
     font-size: 2.4rem;
     font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logos_container {
+    width: 70%;
+    padding: 4.8rem 0;
+  }
+
+  h3 {
+    font-size: 4.8rem;
   }
 }
 

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import lamp from '../images/lamp.png';
-import flexibility from '../images/flexibility.png';
-import cost_efficiency from '../images/cost_efficiency.png';
-import team from '../images/team.png';
+import lamp from '../../images/lamp.png';
+import flexibility from '../../images/flexibility.png';
+import cost_efficiency from '../../images/cost_efficiency.png';
+import team from '../../images/team.png';
 
 const Advantages = () => {
     const [cardStatus, setCardStatus] = useState(false);
