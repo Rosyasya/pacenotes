@@ -32,16 +32,24 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .main_container {
     width: 80%;
 
     h1 {
-      font-size: 5.6rem;
+      font-size: 6rem;
     }
 
     h2 {
       font-size: 3.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main_container {
+    h1 {
+      font-size: 5.6rem;
     }
   }
 }

@@ -11,16 +11,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 8rem;
+  
+  > .secondary_button {
+    display: none;
+  }
 }
 
 .why_row {
   display: flex;
+  align-items: center;
   gap: 8rem;
   flex-wrap: wrap;
 
   &__reverse {
     display: flex;
+    align-items: center;
     gap: 8rem;
     flex-wrap: wrap;
     flex-direction: row-reverse;
@@ -39,6 +46,10 @@
   p {
     width: 48rem;
   }
+
+  .secondary_button {
+    margin: 1.6rem 0 0 0;
+  }
 }
 
 .why_img {
@@ -50,9 +61,14 @@
 
 @media screen and (max-width: 768px) {
   .why_container {
-    width: 70%;
+    width: 90%;
     padding: 4.8rem 0;
     gap: 4.8rem;
+
+    .secondary_button {
+      display: flex;
+      align-self: start;
+    }
   }
 
   .why_row {
@@ -64,6 +80,16 @@
       flex-direction: column;
     }
   }
+
+  .why_info {
+    p {
+      width: 100%;
+    }
+
+    .secondary_button {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -71,6 +97,11 @@
     width: 90%;
     padding: 4.8rem 0;
     gap: 4.8rem;
+
+    .secondary_button {
+      display: flex;
+      align-self: start;
+    }
   }
 
   .why_row {
@@ -86,6 +117,10 @@
   .why_info {
     p {
       width: 33.5rem;
+    }
+
+    .secondary_button {
+      display: none;
     }
   }
 }

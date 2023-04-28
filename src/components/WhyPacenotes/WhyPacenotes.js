@@ -1,9 +1,8 @@
 import React from "react";
 import whyFirstHero from '../../images/whyFirstHero.png';
 import whySecondHero from '../../images/whySecondHero.png';
-import {Link} from "react-router-dom";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLongArrowRight} from "@fortawesome/free-solid-svg-icons";
+import Button from "../Button/Button";
 
 const WhyPacenotes = () => {
     return (
@@ -23,15 +22,13 @@ const WhyPacenotes = () => {
                     <div className="why_info">
                         <p>As such, through my years of racing, I have come to understand that <strong>preparation and agility are two critical components</strong> that are essential for success. Much like pacenotes for rally drivers, a <strong>well-crafted marketing strategy with a step-by-step marketing plan</strong> acts as a roadmap to guide businesses through the challenges of the market. <br/>
                             As your CMO, <strong>I’ll provide you the pacenotes, or marketing strategy</strong>, to help navigate the market and reach the finish line ahead of the competition. I’ll work with you every step of the way, updating and adapting our strategy whenever needed to ensure short and long-term success.</p>
+                        <Button title='Read more' type='secondary_button' icon={faLongArrowRight} iconSize='xl' link='/' />
                     </div>
                     <div className="why_img">
                         <img src={whySecondHero} alt="second hero"/>
                     </div>
                 </div>
-                <Link className='secondary_button' to='/'>
-                    Read more
-                    <FontAwesomeIcon icon={faLongArrowRight} size='xl'/>
-                </Link>
+                <Button title='Read more' type='secondary_button' icon={faLongArrowRight} iconSize='xl' link='/' />
             </div>
         </div>
     );

@@ -1,0 +1,27 @@
+.help_card {
+  width: 100%;
+  padding: 3.2rem 3.2rem;
+  background: white;
+  border-radius: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+
+  &__premium {
+    box-shadow: 8px 8px 56px rgba(50, 39, 95, 0.15);
+  }
+}
+
+.help_card_img_container {
+  width: 6.4rem;
+  height: 6.4rem;
+  background: #EFEFFF;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__premium {
+    background: #9747FF;
+  }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import {faPhone, faXmark} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Link} from "react-router-dom";
+import Button from "../Button/Button";
 
 const MobileMenu = ( { burgerActive, setBurgerActive }) => {
     return (
@@ -32,10 +33,7 @@ const MobileMenu = ( { burgerActive, setBurgerActive }) => {
                         </li>
                     </ul>
                 </nav>
-                <Link className='mobile_primary_button' to='/'>
-                    <FontAwesomeIcon icon={faPhone} />
-                    Book a free call
-                </Link>
+                <Button title='Book a free call' type='primary_button' icon={faPhone} isReversed={true} link='/' />
                 <div className='mobile_info_container'>
                     <div className='mobile_info'>
                         <p>Email:</p>

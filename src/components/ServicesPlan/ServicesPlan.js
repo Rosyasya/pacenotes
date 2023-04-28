@@ -1,7 +1,6 @@
 import React from "react";
-import {Link} from "react-router-dom";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLongArrowRight} from "@fortawesome/free-solid-svg-icons";
+import Button from "../Button/Button";
 
 const ServicesPlan = ( { title, price, description, isPremium = false, callback } ) => {
     return (
@@ -12,10 +11,7 @@ const ServicesPlan = ( { title, price, description, isPremium = false, callback 
                 <h2>{price}/month</h2>
                 <p>{description}</p>
             </div>
-            <Link className='secondary_button' to='/'>
-                Read more
-                <FontAwesomeIcon icon={faLongArrowRight} size='xl'/>
-            </Link>
+            <Button title='Read more' type='secondary_button' icon={faLongArrowRight} iconSize='xl' link='/' />
         </div>
     );
 };

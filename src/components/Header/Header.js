@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {faBars, faPhone} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import Button from "../Button/Button";
 
 const Header = ( { burgerActive, setBurgerActive }) => {
     return (
@@ -34,10 +35,7 @@ const Header = ( { burgerActive, setBurgerActive }) => {
                         </li>
                     </ul>
                 </nav>
-                <Link className='primary_button' to='/'>
-                    <FontAwesomeIcon icon={faPhone} />
-                    Book a free call
-                </Link>
+                <Button title='Book a free call' type='primary_button' icon={faPhone} iconSize='lg' isReversed={true} link='/' />
                 <button onClick={() => setBurgerActive(!burgerActive)} className='header_burger'>
                     <FontAwesomeIcon icon={faBars} size='2xl' />
                 </button>

@@ -1,0 +1,37 @@
+.anyQuestions_wrapper {
+  width: 100%;
+}
+
+.anyQuestions_container {
+  width: 70%;
+  margin: 10rem auto;
+  padding: 8rem 0;
+  background: white;
+  border-radius: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+  box-shadow: 8px 8px 56px rgba(50, 39, 95, 0.15);
+}
+
+@media screen and (max-width: 768px) {
+  .anyQuestions_container {
+    width: 90%;
+    margin: 4.8rem auto;
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+}
+
+@media screen and (max-width: 375px){
+  .anyQuestions_container {
+    h1 {
+      font-size: 3.2rem;
+      text-align: center;
+    }
+  }
+}

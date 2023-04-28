@@ -21,6 +21,12 @@
   gap: 2.4rem;
 }
 
+@media screen and (max-width: 768px) {
+  .services_container {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 375px){
   .services_container {
     width: 90%;
