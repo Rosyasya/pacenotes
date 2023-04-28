@@ -4,11 +4,11 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Link} from "react-router-dom";
 import Button from "../Button/Button";
 
-const MobileMenu = ( { burgerActive, setBurgerActive }) => {
+const MobileMenu = ( { burgerStatus, setBurgerStatus } ) => {
     return (
-        <div className={`mobile_menu_wrapper ${burgerActive ? 'mobile_active' : ''}`}>
+        <div className={`mobile_menu_wrapper ${burgerStatus ? 'mobile_active' : ''}`}>
             <div className="mobile_menu_container">
-                <button onClick={() => setBurgerActive(!burgerActive)}>
+                <button onClick={() => setBurgerStatus(!burgerStatus)}>
                     <FontAwesomeIcon icon={faXmark} size='2xl'/>
                 </button>
                 <nav className='mobile_menu_nav_container'>

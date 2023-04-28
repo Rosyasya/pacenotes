@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import {faBars, faPhone} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Button from "../Button/Button";
+import MobileMenu from "../MobileMenu/MobileMenu";
 
-const Header = ( { burgerActive, setBurgerActive }) => {
+const Header = () => {
+    const [burgerStatus, setBurgerStatus] = useState(false);
+
     return (
         <div className='header_wrapper'>
             <div className='header_container'>
@@ -36,10 +39,11 @@ const Header = ( { burgerActive, setBurgerActive }) => {
                     </ul>
                 </nav>
                 <Button title='Book a free call' type='primary_button' icon={faPhone} iconSize='lg' isReversed={true} link='/' />
-                <button onClick={() => setBurgerActive(!burgerActive)} className='header_burger'>
+                <button onClick={() => setBurgerStatus(!burgerStatus)} className='header_burger'>
                     <FontAwesomeIcon icon={faBars} size='2xl' />
                 </button>
             </div>
+            <MobileMenu burgerStatus={burgerStatus} setBurgerStatus={setBurgerStatus} />
         </div>
     );
 };
