@@ -1,0 +1,44 @@
+.testimonials_slider_item {
+  height: 49.1rem;
+  padding: 4.8rem;
+  background: #F4F4F9;
+  border-radius: 1.6rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+  flex: 1 48rem;
+
+  img {
+    border-radius: 10rem;
+  }
+}
+
+.testimonials_slider_item_info {
+  width: 95%;
+  text-align: center;
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  h4 {
+    color: #8E98B0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 0 0 1.6rem 0;
+  }
+
+  h5 {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .testimonials_slider_item {
+    height: 100%;
+  }
+}
