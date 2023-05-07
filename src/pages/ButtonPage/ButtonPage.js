@@ -1,4 +1,4 @@
-import Button from "../../components/Button/Button";
+import Button from "../../components/ui-kit/Button/Button";
 import {faLongArrowRight} from "@fortawesome/free-solid-svg-icons";
 
 const ButtonPage = () => {

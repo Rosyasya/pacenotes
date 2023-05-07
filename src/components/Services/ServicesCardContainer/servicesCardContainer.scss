@@ -1,0 +1,20 @@
+.cardContainer_wrapper {
+  width: 100%;
+  background: white;
+}
+
+.cardContainer_container {
+  width: 68%;
+  margin: 0 auto;
+  padding: 8rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 4.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .cardContainer_container {
+    width: 90%;
+    flex-direction: column;
+  }
+}

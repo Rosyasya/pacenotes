@@ -1,0 +1,28 @@
+.blogCard_container {
+  width: 31.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .blogCard_container {
+    h3 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .blogCard_container {
+    width: 100%;
+  }
+
+  .blogCard_img_container {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}

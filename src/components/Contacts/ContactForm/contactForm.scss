@@ -1,0 +1,78 @@
+.contactForm_wrapper {
+  width: 100%;
+  background: white;
+}
+
+.contactForm_container {
+  width: 35%;
+  margin: 0 auto;
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.contactForm_info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  text-align: center;
+  align-items: center;
+
+  h4 {
+    font-weight: 400;
+  }
+}
+
+.contactForm_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: center;
+  font-weight: 500;
+
+  input {
+    width: 50rem;
+    padding: 0 0 0 2rem;
+    height: 4.8rem;
+    background: #F4F4F9;
+    border: none;
+    border-radius: .8rem;
+    outline: none;
+  }
+
+  textarea {
+    width: 50rem;
+    padding: 1.4rem 2rem;
+    resize: none;
+    background: #F4F4F9;
+    border: none;
+    border-radius: .8rem;
+    outline: none;
+    font-family: 'Aeonik';
+  }
+
+  a {
+    padding: 1.5rem 6.6rem;
+    align-self: start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactForm_container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contactForm_form {
+    input {
+      width: 33.5rem;
+    }
+
+    textarea {
+      width: 33.5rem;
+    }
+  }
+}

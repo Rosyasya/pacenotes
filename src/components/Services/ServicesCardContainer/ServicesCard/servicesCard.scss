@@ -1,0 +1,36 @@
+.card_container {
+  width: 31.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  h4 {
+    margin: 0 0 -2.4rem 0;
+    font-weight: 400;
+    color: #8E98B0;
+  }
+
+  hr {
+    color: #8E98B0;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card_container {
+    width: 98%;
+
+    h3 {
+      font-size: 4rem;
+    }
+
+    ul {
+      margin: 0 0 0 2rem;
+    }
+  }
+}

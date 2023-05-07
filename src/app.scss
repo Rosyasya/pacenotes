@@ -44,6 +44,7 @@ body {
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 
@@ -74,22 +75,34 @@ h3 {
   color: #9747FF;
 }
 
-@import 'components/Header/header';
-@import 'components/Main/main';
-@import 'components/Logos/logos';
-@import 'components/Hero/hero';
-@import 'components/Advantages/advantages';
-@import "components/AdvantagesCard/advantragesCard";
-@import 'components/Testimonials/testimonials';
-@import 'components/TestimonialsCard/testimonialsCard';
-@import 'components/Services/services';
-@import 'components/ServicesPlan/servicesPlan';
-@import 'components/WhyPacenotes/whyPacenotes';
-@import 'components/Help/help';
-@import 'components/HelpCard/helpCard';
+.short_info {
+  display: flex;
+  gap: .8rem;
+}
+
+@import 'components/About/AboutSection/aboutSection';
+@import "components/Home/Advantages/AdvantagesCard/advantragesCard";
+@import 'components/Home/Advantages/advantages';
 @import 'components/AnyQuestion/anyQuestions';
-@import 'components/Footer/footer';
-@import 'components/MobileMenu/mobileMenu';
-@import 'components/Slider/slider';
-@import 'components/Button/button';
+@import 'components/Blog/blogSection';
+@import 'components/Blog/BlogCard/blogCard';
+@import 'components/ui-kit/Button/button';
 @import "pages/ButtonPage/buttonPage";
+@import 'components/Contacts/ContactForm/contactForm';
+@import 'components/Footer/footer';
+@import 'components/Header/header';
+@import 'components/Home/Hero/hero';
+@import 'components/Home/Help/help';
+@import 'components/Home/Help/HelpCard/helpCard';
+@import 'components/Home/HomeMain/homeMain';
+@import 'components/Home/Logos/logos';
+@import 'components/Main/main';
+@import 'components/Header/MobileMenu/mobileMenu';
+@import 'components/Home/Services/services';
+@import 'components/Services/ServicesCardContainer/ServicesCard/servicesCard';
+@import 'components/Services/ServicesCardContainer/servicesCardContainer';
+@import 'components/Home/Services/ServicesPlan/servicesPlan';
+@import 'components/Home/Slider/slider';
+@import 'components/Home/Testimonials/testimonials';
+@import 'components/Home/Testimonials/TestimonialsCard/testimonialsCard';
+@import 'components/Home/WhyPacenotes/whyPacenotes';

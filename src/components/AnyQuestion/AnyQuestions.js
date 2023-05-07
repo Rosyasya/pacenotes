@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Button/Button";
+import Button from "../ui-kit/Button/Button";
 import {faPhone} from "@fortawesome/free-solid-svg-icons";
 
 const AnyQuestions = () => {

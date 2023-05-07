@@ -1,6 +1,8 @@
 .header_wrapper {
+  position: relative;
   width: 100%;
   background: white;
+  box-shadow: 8px 8px 56px rgba(50, 39, 95, 0.15);
 }
 
 .header_container {
@@ -10,7 +12,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: white;
 
   button {
     display: none;
@@ -44,6 +45,10 @@
     display: flex;
     gap: 2.4rem;
     font-weight: 700;
+
+    li {
+      cursor: pointer;
+    }
   }
 }
 

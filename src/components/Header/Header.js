@@ -2,11 +2,13 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import {faBars, faPhone} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import Button from "../Button/Button";
-import MobileMenu from "../MobileMenu/MobileMenu";
+import Button from "../ui-kit/Button/Button";
+import MobileMenu from "./MobileMenu/MobileMenu";
+import * as Scroll from 'react-scroll';
 
 const Header = () => {
     const [burgerStatus, setBurgerStatus] = useState(false);
+    const Anchor = Scroll.Link;
 
     return (
         <div className='header_wrapper'>
@@ -22,19 +24,19 @@ const Header = () => {
                             <Link to='/'>Home</Link>
                         </li>
                         <li>
-                            <Link to='/'>About me</Link>
+                            <Link to='/about'>About me</Link>
                         </li>
                         <li>
-                            <Link to='/'>Services</Link>
+                            <Link to='/services'>Services</Link>
                         </li>
                         <li>
-                            <Link to='/'>Testimonials</Link>
+                            <Anchor to='Testimonials'>Testimonials</Anchor>
                         </li>
                         <li>
-                            <Link to='/'>Blog</Link>
+                            <Link to='/blog'>Blog</Link>
                         </li>
                         <li>
-                            <Link to='/'>Contacts</Link>
+                            <Link to='/contacts'>Contacts</Link>
                         </li>
                     </ul>
                 </nav>
